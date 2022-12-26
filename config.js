@@ -49,7 +49,7 @@ const config = {
     title: 'octo-campus | @osawa-koki',
     description: 'ITに関するイロイロな情報を発信。',
     ogImage: null,
-    docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
+    docsLocation: 'https://github.com/osawa-koki/octo-campus/tree/main/content',
     favicon: `${basePath}/img/tako.png`,
   },
   pwa: {
