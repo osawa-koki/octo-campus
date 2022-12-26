@@ -7,7 +7,7 @@ const sections = [
 
 const isProd = process.env.NODE_ENV === 'production';
 
-const basePath = isProd ? '/octo-campus' : ''; // update this to the name of your repo
+const basePath = isProd ? '/octo-campus/' : '/'; // update this to the name of your repo
 const uri = isProd ? 'https://osawa-koki.github.io' : 'http://localhost:8000'; // update this to your github pages url
 
 const project_name = 'octo-campus'; // update this to your project name
