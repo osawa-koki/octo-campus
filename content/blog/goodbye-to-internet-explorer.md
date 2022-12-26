@@ -8,7 +8,7 @@ date: "2022-12-26"
 ## Internet Explorerにさよならを、、、
 
 Internet Explorerが正式にサポートを停止するということでお別れをしてきました。  
-Windows11でも以下のコマンドで呼び出せるということでしたので、、、
+Windows11でもPowershellで以下のコマンドを実行することで呼び出せるということでしたので、、、
 
 ```powershell
 (New-Object -ComObject InternetExplorer.Application).Visible="true"
