@@ -13,6 +13,7 @@ const uri = isProd ? 'https://osawa-koki.github.io' + basePath : 'http://localho
 const project_name = 'octo-campus'; // update this to your project name
 
 const config = {
+  pathPrefix: basePath,
   gatsby: {
     pathPrefix: basePath,
     siteUrl: uri,
