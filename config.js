@@ -44,7 +44,7 @@ const config = {
     collapsedNav: [
       '/codeblock', // add trailing slash if enabled above
     ],
-    links: [{ text: 'Hasura', link: 'https://hasura.io' }],
+    links: [{ text: 'Osawa Koki', link: 'https://osawa-koki.github.io/osawa-koki/' }],
     frontLine: false,
     ignoreIndex: true,
     title:
