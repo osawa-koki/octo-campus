@@ -1,4 +1,10 @@
 
+const sections = [
+  '/introduction',
+  '/html-css',
+  '/regex',
+];
+
 const isProd = process.env.NODE_ENV === 'production';
 
 const basePath = isProd ? '/octo-campus' : ''; // update this to the name of your repo
@@ -31,15 +37,9 @@ const config = {
     },
   },
   sidebar: {
-    forcedNavOrder: [
-      '/introduction', // add trailing slash if enabled above
-      '/codeblock',
-      '/hello',
-    ],
-    collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
-      '/hello',
-    ],
+    // add trailing slash if enabled above
+    forcedNavOrder: sections,
+    collapsedNav: sections,
     links: [{ text: 'Osawa Koki', link: 'https://osawa-koki.github.io/osawa-koki/' }],
     frontLine: false,
     ignoreIndex: true,
