@@ -134,7 +134,7 @@ const Tree = ({ edges }) => {
   const toggle = url => {
     setCollapsed({
       ...collapsed,
-      [`${config.gatsby.pathPrefix}${url}`]: !collapsed[`${config.gatsby.pathPrefix}${url}`],
+      [url]: !collapsed[url],
     });
   };
 
