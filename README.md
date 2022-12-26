@@ -4,7 +4,7 @@
 
 ```shell
 # デバグ用実行
-yarn dev
+yarn serve
 
 # デプロイ用ビルド
 yarn build
