@@ -1,32 +1,26 @@
+
+const isProd = process.env.NODE_ENV === 'production';
+
+const basePath = isProd ? '/octo-campus' : ''; // update this to the name of your repo
+const uri = isProd ? 'https://osawa-koki.github.io' + basePath : 'http://localhost:8000'; // update this to your github pages url
+
+const project_name = 'octo-campus'; // update this to your project name
+
 const config = {
   gatsby: {
-    pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
+    pathPrefix: basePath,
+    siteUrl: uri,
     gaTrackingId: null,
     trailingSlash: false,
   },
   header: {
-    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
-    logoLink: 'https://hasura.io/learn/',
-    title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
-    githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
+    logo: `${basePath}/img/Logo.png`,
+    logoLink: uri,
+    title: `<a href='${uri}'><img class='img-responsive' src='${basePath}/img/SmallLogo.png' alt='octo-campus' /></a>`,
+    githubUrl: 'https://github.com/osawa-koki/octo-campus',
     helpUrl: '',
     tweetText: '',
-    social: `<li>
-		    <a href="https://twitter.com/hasurahq" target="_blank" rel="noopener">
-		      <div class="twitterBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Twitter'}/>
-		      </div>
-		    </a>
-		  </li>
-			<li>
-		    <a href="https://discordapp.com/invite/hasura" target="_blank" rel="noopener">
-		      <div class="discordBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/discord-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>`,
+    social: ``,
     links: [{ text: '', link: '' }],
     search: {
       enabled: false,
@@ -40,28 +34,29 @@ const config = {
     forcedNavOrder: [
       '/introduction', // add trailing slash if enabled above
       '/codeblock',
+      '/hello',
     ],
     collapsedNav: [
       '/codeblock', // add trailing slash if enabled above
+      '/hello',
     ],
     links: [{ text: 'Osawa Koki', link: 'https://osawa-koki.github.io/osawa-koki/' }],
     frontLine: false,
     ignoreIndex: true,
-    title:
-      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
+    title: `<a href='${uri}'>🥺🥺🥺</a><div class='greenCircle'></div><a href='${uri}/introduction/'>introduction</a>`,
   },
   siteMetadata: {
-    title: 'Gatsby Gitbook Boilerplate | Hasura',
-    description: 'Documentation built with mdx. Powering hasura.io/learn ',
+    title: 'octo-campus | @osawa-koki',
+    description: 'ITに関するイロイロな情報を発信。',
     ogImage: null,
     docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    favicon: `${basePath}/img/tako.png`,
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
     manifest: {
-      name: 'Gatsby Gitbook Starter',
-      short_name: 'GitbookStarter',
+      name: project_name,
+      short_name: project_name,
       start_url: '/',
       background_color: '#6b37bf',
       theme_color: '#6b37bf',
