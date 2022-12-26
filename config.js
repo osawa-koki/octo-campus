@@ -2,6 +2,7 @@
 const sections = [
   '/introduction',
   '/html-css',
+  '/blog',
 ];
 
 const isProd = process.env.NODE_ENV === 'production';
