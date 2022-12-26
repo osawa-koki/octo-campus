@@ -1,5 +1,7 @@
 ---
 title: "HTML&CSS"
+metaTitle: "HTML&CSS"
+metaDescription: "Webサイト構築の基本技術となるHTMLとCSSとは？？？"
 ---
 
 ## HTMLとCSS
