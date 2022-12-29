@@ -9,7 +9,7 @@ date: "2022-12-28"
 
 Visual Studioでプログラミングしていると突如、以下のエラーが、、、  
 
-![Visual Studioエラー](./img/internet-explorer.gif)  
+![Visual Studioエラー](img/VisualStudio-internal_error.png)  
 
 Visual Studioを再起動しても、PCを再起動しても直らず、、、  
 
