@@ -4,10 +4,13 @@
 
 ```shell
 # デバグ用実行
-gatsby develop
+yarn develop
+
+# デプロイ用ビルドされたものをデモ
+yarn serve
 
 # デプロイ用ビルド
-gatsby build
+yarn build
 ```
 
 ## 補足
@@ -15,6 +18,10 @@ gatsby build
 ディレクトリ内でのファイルの順序は定義できなさそう。  
 
 [公式ページ](https://github.com/hasura/learn-graphql/tree/master/tutorials/frontend/react-apollo-hooks/tutorial-site/content)でも順序を指定するのに、ファイル名の先頭に数字を付けて制御していたため、ここでもその方法を採用する。  
+
+---
+
+困ったときは`gatsby clean`で一度クリーンな状態にしてから`yarn build`を実行する。  
 
 ## 参考文献
 
